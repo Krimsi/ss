@@ -26,9 +26,9 @@
     <div class="nav-wrapper  grey darken-4">
       <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="Discepline.html">Дисциплины</a></li>
-        <li><a href="sportsmen.html">Спортсмены</a></li>
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
         <li><a href="#">Обратная связь</a></li>
       </ul>
     </div>
@@ -56,8 +56,7 @@
     <div class="container" style="padding-left:150px;">
     <div class="col s 12 m7">
       <div class="card large">
-        <div class="card-image">
-          <img src="img/Pasha.jpg">
+        <div class="card-image        <img src="img/Pasha.jpg">
           <span class="card-title">Ярослав PashaBiceps Яжомбковски</span>
         </div>
         <div class="card-content">

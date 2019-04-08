@@ -29,9 +29,9 @@
     <div class="nav-wrapper  grey darken-4">
       <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="Discepline.html">Дисциплины</a></li>
-        <li><a href="sportsmen.html">Спортсмены</a></li>
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
         <li><a href="#">Обратная связь</a></li>
       </ul>
     </div>
@@ -89,9 +89,7 @@
       <div class="col s5" id="textn">Серия турниров The International по компьютерной игре Dota 2 проводится под руководством компании-разработчика игры: Valve. Финальная часть турнира собирает 16 лучших команд мира.Начиная с 2011 года турниры The International проводятся один раз в год и являются наиболее престижными в дисциплине Dota 2, как по размеру суммы призовых, так и по составу участников. The International считается аналогом чемпионата мира в других видах спорта и является главным событием года в кибер-дисциплине Dota 2, победа в котором является наивысшим достижением для игроков и команд со всего мира. Призовой фонд даже самого первого турнира в 2011 году был беспрецедентным для киберспорта и составил $1 600 000, но за семь лет он вырос в шестнадцать раз и в 2018 году превысил $25,5 млн, начиная с 2013 года ежегодно бьёт рекорд по сумме призовых.</div>
     <div class="col s1"></div>
     </div>
-</div>
-  
-
+</div>php
   <div class="row">
 <div class="logotip">
 
