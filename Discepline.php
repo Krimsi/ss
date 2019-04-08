@@ -24,10 +24,10 @@
 <body>
 <nav>
 </head>
-<body style="background-color: #212121;">
+<body style="background-color: #263238;">
 <nav>
     <div class="nav-wrapper  grey darken-4">
-      <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+      <a href="index.php" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
         <li><a href="Discepline.php">Дисциплины</a></li>
@@ -45,7 +45,7 @@
     <div class="row">
      
 <div class="logotip">
-     <div class="col s2" style="text-align: center; padding:10px; ">Турниры CS:GO<img src="img/cs-go-csgo-inventory-icon-27.png"></div>
+     <div class="col s2" style="text-align: center; padding:10px; ">Турниры CS:GO<img src="img/cs-go-csgo-inventory-icon-27.png" style="width: 180px; height: 180px;"></div>
      </div>
       <div class="col s5"> <div class="slider">
     <ul class="slides">
@@ -68,7 +68,7 @@
           <div class="row">
 <div class="logotip">
 
-     <div class="col s2" style="text-align: center;">Турниры Dota 2<img src="img/dota_2_logo_by_flashstep111-daj7nti.png"></div>
+     <div class="col s2" style="text-align: center;">Турниры Dota 2<img src="img/dota_2_logo_by_flashstep111-daj7nti.png" style="width: 350px; height: 250px; margin-left: -40px;"></div>
    </div>
       <div class="col s5"> <div class="slider">
     <ul class="slides">
@@ -86,19 +86,22 @@
       </li>
     </ul>
   </div></div>
-      <div class="col s5" id="textn">Серия турниров The International по компьютерной игре Dota 2 проводится под руководством компании-разработчика игры: Valve. Финальная часть турнира собирает 16 лучших команд мира.Начиная с 2011 года турниры The International проводятся один раз в год и являются наиболее престижными в дисциплине Dota 2, как по размеру суммы призовых, так и по составу участников. The International считается аналогом чемпионата мира в других видах спорта и является главным событием года в кибер-дисциплине Dota 2, победа в котором является наивысшим достижением для игроков и команд со всего мира. Призовой фонд даже самого первого турнира в 2011 году был беспрецедентным для киберспорта и составил $1 600 000, но за семь лет он вырос в шестнадцать раз и в 2018 году превысил $25,5 млн, начиная с 2013 года ежегодно бьёт рекорд по сумме призовых.</div>
+
+      <div class="col s5" id="textn" style="margin-top: -5px;">Серия турниров The International по компьютерной игре Dota 2 проводится под руководством компании-разработчика игры: Valve. Финальная часть турнира собирает 16 лучших команд мира.Начиная с 2011 года турниры The International проводятся один раз в год и являются наиболее престижными в дисциплине Dota 2, как по размеру суммы призовых, так и по составу участников. The International считается аналогом чемпионата мира в других видах спорта и является главным событием года в кибер-дисциплине Dota 2, победа в котором является наивысшим достижением для игроков и команд со всего мира. Призовой фонд даже самого первого турнира в 2011 году был беспрецедентным для киберспорта и составил $1 600 000, но за семь лет он вырос в шестнадцать раз и в 2018 году превысил $25,5 млн, начиная с 2013 года ежегодно бьёт рекорд по сумме призовых.</div>
+
     <div class="col s1"></div>
-    </div>
-</div>php
+   
+  </div>
+</div>
   <div class="row">
 <div class="logotip">
 
-     <div class="col s2" style="text-align: center;">Турниры Hearthstone<img src="img/hearthstone_icone.png"></div>
+     <div class="col s2" style="text-align: center;">Турниры Hearthstone<img src="img/hearthstone_icone.png" style="width:150px; height: 150px;"></div>
    </div>
       <div class="col s5"> <div class="slider">
     <ul class="slides">
       <li>
-        <img src="img/HS1.jpg"> <!-- random image -->
+        <img src="img/HS1.jpg"> 
       </li>
       <li>
         <img src="img/HS2.jpg"> 
@@ -112,7 +115,7 @@
       </li>
     </ul>
   </div></div>
-      <div class="col s5" id="textn">После официального выхода игры в марте 2014 года турниры по Hearthstone были проведены на ежегодной выставке EGX , серии Intel Extreme Masters и финале DreamHack, а также множество небольших турниров, большая часть из которых приглашала участников по системе уайлд-кард без предварительной квалификации. За основу в них был положен принцип, применённый на «Innkeeper’s Invitational», то есть предварительный сбор определённого числа колод без возможности изменить или сменить их по ходу первенства, но, в отличие от стартовых соревнований, добавлялась возможность исключить по выбору на всю серию одну из колод противника. В дальнейшем именно такой свод правил получил повсеместное распространение и был применён на турнирах, проходивших под эгидой Blizzard Entertainment</div>
+      <div class="col s5" id="textn" style="margin-top: -5px;">После официального выхода игры в марте 2014 года турниры по Hearthstone были проведены на ежегодной выставке EGX , серии Intel Extreme Masters и финале DreamHack, а также множество небольших турниров, большая часть из которых приглашала участников по системе уайлд-кард без предварительной квалификации. За основу в них был положен принцип, применённый на «Innkeeper’s Invitational», то есть предварительный сбор определённого числа колод без возможности изменить или сменить их по ходу первенства, но, в отличие от стартовых соревнований, добавлялась возможность исключить по выбору на всю серию одну из колод противника. В дальнейшем именно такой свод правил получил повсеместное распространение и был применён на турнирах, проходивших под эгидой Blizzard Entertainment</div>
     <div class="col s1"></div>
     </div>
 
@@ -126,7 +129,7 @@
 
 
 
-  <footer class="page-footer grey darken-4">
+    <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -134,12 +137,12 @@
                 <p class="white-text ">Что бы чего то добиться, нужно бросить всё и идти к цели. </p>
                 <span>© Саша Simple Костылев</span>
               </div>
-              <div class="col l4 offset-l2 s12">
+              <div class="col l4 offset-l2 s12" >
                 <h5 class="white-text">Связь с нами!</h5>
-                <ul>
-                  <li><a class="white-text " href="#!">Мы в VK</a></li>
+                <ul  >
+                  <li><a class="white-text " href="#!">Мы в VK</a> </li>
                   <li><a class="white-text " href="#!">Мы в Telegram`e</a></li>
-                  <li><a class="white-text " href="#!">Мы в Facebook`е</a></li>
+                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> </li>
                   
                 </ul>
               </div>
@@ -149,9 +152,7 @@
             <div class="container">
             © 2019 Сайт cybersport.Все права защищены.
             <a class="white-text text-lighten-4 right">Номер для связи +7 (812) 923-13-01</a>
-            </div>
-          </div>
-        </footer>
+          
 </body>
 
 <script src="js/materialize.js"></script>
