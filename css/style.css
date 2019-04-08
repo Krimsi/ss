@@ -1,0 +1,15 @@
+#textn{
+text-align: center;
+margin-top: 20px;	
+line-height: 2.1;
+}
+body{
+	bcg
+}
+
+@media only screen and (max-width: 1370px) {
+.logotip {
+    display: none;
+}
+}
+
