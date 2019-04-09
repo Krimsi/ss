@@ -13,26 +13,28 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" rel="stylesheet">
+<link href="css/materialize.css" rel="stylesheet"> 
 <link href="css/materialize.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 
 
 </head>
 <body style="background-color: #212121;">
 <nav>
     <div class="nav-wrapper  grey darken-4">
+      <div id="jq">
       <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+    </div>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
-        <li><a href="Discepline.php">Дисцеплины</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
         <li><a href="#">Обратная связь</a></li>
-      </ul>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
+      </ul> 
     </div>
   </nav>
-
+ 
 	
 
 <div class="slider">
@@ -72,15 +74,8 @@
   </div>
 
 
-
-
-	
-
-
-
-
-
-  <footer class="page-footer grey darken-4">
+<div class="footer">
+   <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -91,9 +86,9 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Связь с нами!</h5>
                 <ul>
-                  <li><a class="white-text " href="#!">Мы в VK</a></li>
-                  <li><a class="white-text " href="#!">Мы в Telegram`e</a></li>
-                  <li><a class="white-text " href="#!">Мы в Facebook`е</a></li>
+                  <li><a class="white-text " href="#!">Мы в VK</a> <img src="img/vk.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Telegram`e</a> <img src="img/telegram.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> <img src="img/facebook.png" style="width: 18px;"></li>
                   
                 </ul>
               </div>
@@ -106,15 +101,23 @@
             </div>
           </div>
         </footer>
-</body>
+      </div>
+     
 
+
+
+  <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
+
+
+
+</body>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
+<script src="js/vue.js"></script>
+
 
 </html>

@@ -15,29 +15,31 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" rel="stylesheet">
 <link href="css/materialize.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<link href="css/style.css" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 
 
 
 
 </head>
-<body style="background-color: #212121;">
+<body style="background-color: #263238;">
 <nav>
     <div class="nav-wrapper  grey darken-4">
-      <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+      <a href="index.php" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
         <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
         <li><a href="#">Обратная связь</a></li>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
       </ul>
     </div>
   </nav>
-
+<div class="pravka" style="position: relative; margin-top: 20px;">
   <div class="row">
     <div class="container" style="padding-left:150px; ">
     <div class="col m5">
-      <div class="card large">
+      <div class="card large blue-grey lighten-5">
         <div class="card-image">
           <img src="img/Simple.jpg">
           <span class="card-title">Саша Simple Костылев</span>
@@ -54,12 +56,13 @@
 
 
     <div class="container" style="padding-left:150px;">
-    <div class="col s 12 m7">
-      <div class="card large">
-        <div class="card-image        <img src="img/Pasha.jpg">
-          <span class="card-title">Ярослав PashaBiceps Яжомбковски</span>
+    <div class="col s 12 m7 " >
+      <div class="card large blue-grey lighten-5">
+        <div class="card-image">       <img src="img/Pasha.jpg">
+          <span class="card-title ">Ярослав PashaBiceps Яжомбковски</span>
         </div>
-        <div class="card-content">
+
+        <div class="card-content"  >
           <p>Профессиональный игрок в CS:GO. Чемпион турнира Major (в составе Virtus.pro) в 2014 году.Pasha начал свою карьеру в Counter-Strike 1.6 и долгое время выступал за малоизвестные польские коллективы. Однако в 2010 году стал частью легендарной «золотой пятерки».На мировых финалах IEM 6 признан лучшим игроком турнира.</p>
         </div>
       </div>
@@ -71,7 +74,7 @@
 
 <div class="container" style="padding-left:150px;">
     <div class="col m5">
-      <div class="card large">
+      <div class="card large blue-grey lighten-5">
         <div class="card-image">
           <img src="img/Silver.png">
           <span class="card-title">Владислав SilverName Синотов</span>
@@ -85,27 +88,29 @@
 
  <div class="container" style="padding-left:150px;">
     <div class="col s 12 m7">
-      <div class="card large">
+      <div class="card large blue-grey lighten-5">
         <div class="card-image">
           <img src="img/Dendi.jpg">
           <span class="card-title">Данил Dendi Ишутин</span>
         </div>
-        <div class="card-content">
+        <div class="card-content" style="margin-top: -10px;">
           <p>За годы в Na'Vi Dendi стал чемпионом TI1 и вице-чемпионом TI2 и TI3, семикартным чемпионом Staraladder, двукратным Чемпионом ESWC, не говоря уже о множестве онлайн-турниров разного уровня. И всё это за 2011-14 годы. Весной 2014 года накопившиеся проблемы внутри коллектива привели к ухудшению результатов. На TI4 Na'Vi смогли добраться только до 7-8 места, а на TI5 и вовсе остались в конце призовой таблицы на 13-16 месте. Смены состава и поиск капитана не помогали. И тогда 16 октября 2015 года организация распускает состав. </p>
         </div>
-      </div>
+     
     </div>
   </div>
+</div>
 
 </div>
 
 
+
 	
+</div>
 
 
 
-
-
+<div class="footer">
  <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
@@ -117,9 +122,9 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Связь с нами!</h5>
                 <ul>
-                  <li><a class="white-text " href="#!">Мы в VK</a></li>
-                  <li><a class="white-text " href="#!">Мы в Telegram`e</a></li>
-                  <li><a class="white-text " href="#!">Мы в Facebook`е</a></li>
+                  <li><a class="white-text " href="#!">Мы в VK</a> <img src="img/vk.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Telegram`e</a> <img src="img/telegram.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> <img src="img/facebook.png" style="width: 18px;"></li>
                   
                 </ul>
               </div>
@@ -132,12 +137,18 @@
             </div>
           </div>
         </footer>
+
+</div>
+
+
+         <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
+       </body>
+       
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
+<script src="js/vue.js"></script>
 </html>
