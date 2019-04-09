@@ -37,9 +37,9 @@
     </div>
   </nav>
 	
-<div class="container" >
+<div class="container" id="crin">
  <div class="row">
-    <form class="col s12" id="contactForm" data-toggle="validator" action="" method="post">
+    <form class="col s12"  data-toggle="validator" action="" method="post" id="s31">
       <div class="row" id="container12">
         <div class="col s12">
           <h5 style="color: white;"> Напишите нам отзыв</h5>
@@ -66,15 +66,18 @@
           <label for="email">Email</label>
         </div>
       </div>
-      <button class="btn waves-effect waves-light" type="submit" name="action" style="float: right;">Submit
+      <button class="btn waves-effect waves-light" type="submit"  style="float: right;" value="submit" name="submit">Submit
     <i class="material-icons right">send</i>
-  </button>      
+  </button>  
+  <div style="color: white;">
+   <?php
+require_once 'contr.php';
+?>  
+</div>
     </form>
   </div>
  </div>       
-<?php
-require_once 'contr.php';
-?>
+ 
 	
 
 
