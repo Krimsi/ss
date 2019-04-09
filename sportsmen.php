@@ -25,16 +25,19 @@
 <body style="background-color: #263238;">
 <nav>
     <div class="nav-wrapper  grey darken-4">
-      <a href="index.php" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+      <div id="jq">
+      <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+    </div>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
         <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
-        <li><a href="#">Обратная связь</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
         <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
-      </ul>
+      </ul> 
     </div>
   </nav>
+ 
 <div class="pravka" style="position: relative; margin-top: 20px;">
   <div class="row">
     <div class="container" style="padding-left:150px; ">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CyberSport</title>
+	<title>Разработчики</title>
 
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -13,13 +13,17 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" rel="stylesheet"> 
+<link href="css/materialize.css" rel="stylesheet">
 <link href="css/materialize.min.css" rel="stylesheet">
+<link href="css/style1.css" rel="stylesheet">
+
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 
 
+
 </head>
-<body style="background-color: #212121;">
+
+<body style="background-color: #263238;">
 <nav>
     <div class="nav-wrapper  grey darken-4">
       <div id="jq">
@@ -36,45 +40,54 @@
   </nav>
  
 	
-
-<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src=" img/navi2.jpg"> 
-        <div class="caption Left-align">
-          <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">NAVI</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">У природы есть закон
- Натус Винсер - чемпион!</h5>
+<div class="container" id="crin">
+ <div class="row">
+    <form class="col s12"  data-toggle="validator" action="" method="post" id="s31">
+      <div class="row" id="container12">
+        <div class="col s12">
+          <h5 style="color: white;"> Напишите нам отзыв</h5>
         </div>
-      </li>
-      <li>
-        <img src="img/NAvi1.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">NAVI</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Вижу цель - не вижу препятствий.</h5>
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate" name="first_name">
+          <label for="first_name" >Имя</label>
         </div>
-      </li>
-      <li>
-        <img src="img/VP.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">VP</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Зверя нет сильней медведей.
-Виртус про вперед к победе!.</h5>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name="last_name">
+          <label for="last_name">Фамилия</label>
         </div>
-      </li>
-      <li>
-        <img src="img/VP2.jpg"> <!-- random image -->
-        <div class="caption Right-align">
-          <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">VP</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Ты к медведю не полезешь
-Он быстрей тебя сожрет!От медведя не уедешь Виртус про тебя побьет!</h5>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"name="textarea1"></textarea>
+          <label for="textarea1">Отзыв</label>
         </div>
-      </li>
-    </ul>
+      </div>
+    
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate"  name="email">
+          <label for="email">Ваш email</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit"  style="float: right;" value="submit" name="submit">Submit
+    <i class="material-icons right">send</i>
+  </button>  
+  <div style="color: white;">
+   <?php
+require_once 'contr.php';
+?>  
+</div>
+    </form>
   </div>
+ </div>       
+ 
+	
 
 
-<div class="footer">
+
+
+
+<div class="footer" style="margin-top: 50px">
    <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
@@ -102,14 +115,11 @@
           </div>
         </footer>
       </div>
+
+
+
+         <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
      
-
-
-
-  <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
-
-
-
 </body>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
@@ -118,6 +128,4 @@
 <script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
 <script src="js/vue.js"></script>
-
-
 </html>
