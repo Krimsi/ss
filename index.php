@@ -13,10 +13,9 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" rel="stylesheet">
+<link href="css/materialize.css" rel="stylesheet"> 
 <link href="css/materialize.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 
 
 </head>
@@ -31,10 +30,11 @@
         <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
         <li><a href="#">Обратная связь</a></li>
-      </ul>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
+      </ul> 
     </div>
   </nav>
-
+ 
 	
 
 <div class="slider">
@@ -74,14 +74,7 @@
   </div>
 
 
-
-
-	
-
-
-
-
-
+<div class="footer">
    <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
@@ -108,17 +101,23 @@
             </div>
           </div>
         </footer>
-</body>
+      </div>
+     
 
+
+
+  <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
+
+
+
+</body>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
-<script src="js/script3.js"></script>
+<script src="js/vue.js"></script>
 
 
 </html>
