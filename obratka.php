@@ -13,11 +13,10 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" rel="stylesheet">
+<link href="css/materialize.css" rel="stylesheet"> 
 <link href="css/materialize.min.css" rel="stylesheet">
-<link href="css/style1.css" rel="stylesheet">
-
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<link rel="stylesheet" href="css/style.css">
 
 
 
@@ -25,16 +24,31 @@
 </head>
 <body style="background-color: #212121;">
 <nav>
-    <div class="nav-wrapper  grey darken-4">
-      <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+    <div class="nav-wrapper grey darken-4">
+        <div class="row">
+        <div class="container">
+      <a href="index.php" class="brand-logo"><img src="logo.png" style="padding: 10px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="Discepline.html">Дисцеплины</a></li>
-        <li><a href="sportsmen.html">Спортсмены</a></li>
-        <li><a href="obratka.html">Обратная связь</a></li>
-        <li><a href="comand.html">Команда разработчиков</a></li>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
       </ul>
-    </div>
+      </ul>
+<ul class="side-nav" id="mobile-demo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
+      </ul>
+      </ul>
+   </div>
   </nav>
 	
 <div class="container" id="crin">
@@ -84,7 +98,8 @@ require_once 'contr.php';
 
 
 
-  <footer class="page-footer brown lighten-4 teal lighten-2">
+<div class="footer">
+   <footer class="page-footer grey darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -95,9 +110,9 @@ require_once 'contr.php';
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Связь с нами!</h5>
                 <ul>
-                  <li><a class="white-text " href="#!">Мы в VK</a></li>
-                  <li><a class="white-text " href="#!">Мы в Telegram`e</a></li>
-                  <li><a class="white-text " href="#!">Мы в Facebook`е</a></li>
+                  <li><a class="white-text " href="#!">Мы в VK</a> <img src="img/vk.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Telegram`e</a> <img src="img/telegram.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> <img src="img/facebook.png" style="width: 18px;">  </li>
                   
                 </ul>
               </div>
@@ -106,18 +121,24 @@ require_once 'contr.php';
           <div class="footer-copyright">
             <div class="container">
             © 2019 Сайт cybersport.Все права защищены.
-            <a class="white-text text-lighten-4 right">Номер для связи +7 (812) 923-13-01</a>
             </div>
           </div>
         </footer>
+      </div>
+
+<?php require 'modalwindow.php'; ?>
+
+
+
 </body>
 
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
+<script src="js/script2.js"></script>
+<script src="js/vue.js"></script>
+
 </html>

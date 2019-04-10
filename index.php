@@ -15,27 +15,41 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" rel="stylesheet"> 
 <link href="css/materialize.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 
 
 </head>
 <body style="background-color: #212121;">
+
 <nav>
-    <div class="nav-wrapper  grey darken-4">
-      <div id="jq">
-      <a href="#" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
-    </div>
+    <div class="nav-wrapper grey darken-4">
+        <div class="row">
+        <div class="container">
+      <a href="index.php" class="brand-logo"><img src="logo.png" style="padding: 10px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
         <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
-        <li><a href="#">Обратная связь</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
         <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
-      </ul> 
-    </div>
+      </ul>
+      </ul>
+<ul class="side-nav" id="mobile-demo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
+      </ul>
+      </ul>
+   </div>
   </nav>
- 
-	
+
 
 <div class="slider">
     <ul class="slides">
@@ -43,8 +57,7 @@
         <img src=" img/navi2.jpg"> 
         <div class="caption Left-align">
           <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">NAVI</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">У природы есть закон
- Натус Винсер - чемпион!</h5>
+          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">У природы есть закон Натус Винсер - чемпион!</h5>
         </div>
       </li>
       <li>
@@ -58,16 +71,14 @@
         <img src="img/VP.jpg"> <!-- random image -->
         <div class="caption right-align">
           <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">VP</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Зверя нет сильней медведей.
-Виртус про вперед к победе!.</h5>
+          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Зверя нет сильней медведей. Виртус про вперед к победе!.</h5>
         </div>
       </li>
       <li>
         <img src="img/VP2.jpg"> <!-- random image -->
         <div class="caption Right-align">
           <h3 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">VP</h3>
-          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Ты к медведю не полезешь
-Он быстрей тебя сожрет!От медведя не уедешь Виртус про тебя побьет!</h5>
+          <h5 class="light orange-text text-lighten-1" style="text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;">Ты к медведю не полезешь. Он быстрей тебя сожрет!От медведя не уедешь. Виртус про тебя побьет!</h5>
         </div>
       </li>
     </ul>
@@ -88,7 +99,7 @@
                 <ul>
                   <li><a class="white-text " href="#!">Мы в VK</a> <img src="img/vk.png" style="width: 18px;"></li>
                   <li><a class="white-text " href="#!">Мы в Telegram`e</a> <img src="img/telegram.png" style="width: 18px;"></li>
-                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> <img src="img/facebook.png" style="width: 18px;"></li>
+                  <li><a class="white-text " href="#!">Мы в Facebook`е</a> <img src="img/facebook.png" style="width: 18px;">  </li>
                   
                 </ul>
               </div>
@@ -97,7 +108,6 @@
           <div class="footer-copyright">
             <div class="container">
             © 2019 Сайт cybersport.Все права защищены.
-            <a class="white-text text-lighten-4 right">Номер для связи +7 (812) 923-13-01</a>
             </div>
           </div>
         </footer>
@@ -111,13 +121,19 @@
 
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js%22%3E"></script> 
+<script src="https://cdn.jsdelivr.net/npm/vue%22%3E"></script> 
+<script src="https://code.jquery.com/jquery-2.2.4.js%22%3E"></script> 
+<script src="js/materiallize0.97.7.js"></script> 
+<script src="js/materiallize1.0.0.js"></script>
 <script src="js/modalwindow.js"></script>
-<script src="js/script.js"></script>
 <script src="js/vue.js"></script>
-
-
+<script src="js/script.js"></script>
 </html>

@@ -22,19 +22,38 @@
 
 
 </head>
-<body style="background-color: #263238;">
+<body style="background-color: #212121;">
+
 <nav>
-    <div class="nav-wrapper  grey darken-4">
-      <a href="index.php" class="brand-logo" ><img src="logo.jpg" style="padding-left: 50px;"></a>
+    <div class="nav-wrapper grey darken-4">
+        <div class="row">
+        <div class="container">
+      <a href="index.php" class="brand-logo"><img src="logo.png" style="padding: 10px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.php">Главная</a></li>
         <li><a href="Discepline.php">Дисциплины</a></li>
         <li><a href="sportsmen.php">Спортсмены</a></li>
-        <li><a href="#">Обратная связь</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
         <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
       </ul>
-    </div>
+      </ul>
+<ul class="side-nav" id="mobile-demo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="Discepline.php">Дисциплины</a></li>
+        <li><a href="sportsmen.php">Спортсмены</a></li>
+        <li><a href="obratka.php">Обратная связь</a></li>
+        <li><a class="modal-trigger" href="#modal1">Admin panel</a></li>
+      </ul>
+      </ul>
+   </div>
   </nav>
+
+
+
 <div class="pravka" style="position: relative; margin-top: 20px;">
   <div class="row">
     <div class="container" style="padding-left:150px; ">
@@ -144,10 +163,17 @@
          <?php require 'modalwindow.php'; ?> <!-- модальное окно для админ панели -->
        </body>
        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="js/materialize.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js%22%3E"></script> 
+<script src="https://cdn.jsdelivr.net/npm/vue%22%3E"></script> 
+<script src="https://code.jquery.com/jquery-2.2.4.js%22%3E"></script> 
+<script src="js/materiallize0.97.7.js"></script> 
+<script src="js/materiallize1.0.0.js"></script>
 <script src="js/modalwindow.js"></script>
 <script src="js/script.js"></script>
 <script src="js/vue.js"></script>
